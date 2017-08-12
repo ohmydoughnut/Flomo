@@ -194,6 +194,8 @@ SWIFT_CLASS("_TtC5Timer19TimerViewController")
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified circlesClosedPassive;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified pomoStatus;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified currentTaskLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified previousTaskLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nextTaskLabel;
 @property (nonatomic, readonly, strong) LOTAnimationView * _Nonnull animationView;
 @property (nonatomic) NSInteger seconds;
 @property (nonatomic, strong) NSTimer * _Nonnull timer;
@@ -214,6 +216,8 @@ SWIFT_CLASS("_TtC5Timer19TimerViewController")
 - (void)resetTotalPomos;
 - (void)updateTotalPomos;
 - (void)setCurrentTaskWithCurrentTask:(TaskListViewController * _Nonnull)currentTask;
+- (void)setPreviousTaskWithPreviousTask:(TaskListViewController * _Nonnull)previousTask;
+- (void)setNextTaskWithNextTask:(TaskListViewController * _Nonnull)nextTask;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

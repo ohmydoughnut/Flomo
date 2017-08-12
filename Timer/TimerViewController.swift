@@ -17,6 +17,9 @@ class TimerViewController: UIViewController {
     @IBOutlet weak var circlesClosedPassive: UIImageView!
     @IBOutlet weak var pomoStatus: UILabel!
     @IBOutlet weak var currentTaskLabel: UILabel!
+    @IBOutlet weak var previousTaskLabel: UILabel!
+    @IBOutlet weak var nextTaskLabel: UILabel!
+    
     
     
     let animationView = LOTAnimationView(name: "CirclesRotating_v1")
@@ -26,6 +29,7 @@ class TimerViewController: UIViewController {
     var isTimerRunning = false
     var resumeTapped = false
     let alarmSound = SimpleSound(named: "alarmSound")
+    let completeSound = SimpleSound(named: "completeSound")
     let taskList = TaskListViewController()
     
     var numberOfPomos = 0
@@ -36,7 +40,9 @@ class TimerViewController: UIViewController {
         super.viewDidLoad()
         resetTimer()
         resetTotalPomos()
+        setPreviousTask(previousTask: taskList)
         setCurrentTask(currentTask: taskList)
+        setNextTask(nextTask: taskList)
     }
     
     @IBAction func toggleStartButtonTapped(_ sender: UIButton) {
@@ -138,7 +144,12 @@ class TimerViewController: UIViewController {
     }
     
     func playSound() {
-        alarmSound.play()
+        if numberOfPomos == totalNumberOfPomos - 1 {
+            completeSound.play()
+        } else {
+            alarmSound.play()
+        }
+        
     }
     
     func resetTotalPomos(){
@@ -159,7 +170,18 @@ class TimerViewController: UIViewController {
     }
     
     func setCurrentTask(currentTask: TaskListViewController) {
-        currentTaskLabel.text = currentTask.items[0]
+        currentTaskLabel.text = currentTask.items[1]
     }
+    
+    func setPreviousTask(previousTask: TaskListViewController) {
+        previousTaskLabel.text = previousTask.items[0]
+    }
+    
+    func setNextTask(nextTask: TaskListViewController) {
+        nextTaskLabel.text = nextTask.items[2]
+    }
+    
+    
+    
     
 }
