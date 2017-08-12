@@ -1,0 +1,10 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "783fd157e04398e5e58b93b29cae1620"
+build_time: [555844211, 453701000]
+inputs:
+  "/Users/delanoclyde/Documents/Swift/Timer_v1/Timer/SimpleSound.swift": [526755260, 0]
+  "/Users/delanoclyde/Documents/Swift/Timer_v1/Timer/ViewController.swift": [555806422, 0]
+  "/Users/delanoclyde/Documents/Swift/Timer_v1/Timer/TimerViewController.swift": [555807255, 0]
+  "/Users/delanoclyde/Documents/Swift/Timer_v1/Timer/AppDelegate.swift": [552852153, 0]
+  "/Users/delanoclyde/Documents/Swift/Timer_v1/Timer/ItemTableViewCell.swift": [555792840, 0]
+  "/Users/delanoclyde/Documents/Swift/Timer_v1/Timer/TaskListViewController.swift": [555844199, 0]
