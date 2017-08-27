@@ -19,8 +19,9 @@ class TimerViewController: UIViewController {
     @IBOutlet weak var currentTaskLabel: UILabel!
     @IBOutlet weak var previousTaskLabel: UILabel!
     @IBOutlet weak var nextTaskLabel: UILabel!
-    
-    
+    @IBOutlet weak var pomoCircle1: UIImageView!
+    @IBOutlet weak var pomoCircle2: UIImageView!
+    @IBOutlet weak var pomoCircle3: UIImageView!
     
     let animationView = LOTAnimationView(name: "CirclesRotating_v1")
     
@@ -34,7 +35,6 @@ class TimerViewController: UIViewController {
     
     var numberOfPomos = 0
     var totalNumberOfPomos = 3
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -167,8 +167,29 @@ class TimerViewController: UIViewController {
             pomoStatus.textColor = UIColor(red:0.29, green:0.81, blue:0.29, alpha:1.0)
         }
         
+        if numberOfPomos == 0 {
+            pomoCircle1.image = UIImage(named: "Icon_PomoStatus")
+            pomoCircle2.image = UIImage(named: "Icon_PomoStatus")
+            pomoCircle3.image = UIImage(named: "Icon_PomoStatus")
+        } else if numberOfPomos == 1 {
+            pomoCircle1.image = UIImage(named: "Icon_PomoStatusDone")
+            pomoCircle2.image = UIImage(named: "Icon_PomoStatus")
+            pomoCircle3.image = UIImage(named: "Icon_PomoStatus")
+        } else if numberOfPomos == 2 {
+            pomoCircle1.image = UIImage(named: "Icon_PomoStatusDone")
+            pomoCircle2.image = UIImage(named: "Icon_PomoStatusDone")
+            pomoCircle3.image = UIImage(named: "Icon_PomoStatus")
+        } else if numberOfPomos == 3 {
+            pomoCircle1.image = UIImage(named: "Icon_PomoStatusDone")
+            pomoCircle2.image = UIImage(named: "Icon_PomoStatusDone")
+            pomoCircle3.image = UIImage(named: "Icon_PomoStatusDone")
+        }
     }
     
+//    func updatePomoCircles() {
+//        
+//    }
+//    
     func setCurrentTask(currentTask: TaskListViewController) {
         currentTaskLabel.text = currentTask.items[1]
     }

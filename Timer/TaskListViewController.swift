@@ -11,6 +11,7 @@ import Foundation
 class TaskListViewController: UIViewController, UITableViewDataSource {
     
     var items: [String] = ["Math", "Swift", "Biology"]
+    
     @IBOutlet weak var listTableView: UITableView!
     @IBAction func addItem(_ sender: Any) {
         alert()
@@ -57,4 +58,15 @@ class TaskListViewController: UIViewController, UITableViewDataSource {
         
         present(alert, animated: true, completion: nil)
     }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        items.remove(at: indexPath.row)
+        tableView.deleteRows(at: [indexPath], with: .automatic)
+    }
+    
+    @IBAction func startFromTasklist(_ sender: Any) {
+        self.tabBarController?.selectedIndex = 1;
+    }
+    
+    
 }

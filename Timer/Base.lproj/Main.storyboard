@@ -135,7 +135,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Focus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7VV-SB-Gb9">
-                                <rect key="frame" x="171" y="270.5" width="34" height="14.5"/>
+                                <rect key="frame" x="170.5" y="270.5" width="34" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="0.0" green="0.25098039215686274" blue="0.33725490196078434" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -147,6 +147,12 @@
                                 <color key="textColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total 0/0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNH-1w-rcw">
+                                <rect key="frame" x="160.5" y="500" width="54" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECc-dH-oLZ">
                                 <rect key="frame" x="166" y="98" width="42" height="21"/>
@@ -169,30 +175,36 @@
                                 <color key="textColor" red="0.72941176470588232" green="0.72941176470588232" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="QSe-vU-ZHg">
-                                <rect key="frame" x="152" y="531" width="70" height="20"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="QSe-vU-ZHg">
+                                <rect key="frame" x="156" y="531" width="64" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Icon_PomoStatus" translatesAutoresizingMaskIntoConstraints="NO" id="pQe-1u-He8">
-                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="18" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="18" id="3cM-rx-cf3"/>
+                                            <constraint firstAttribute="height" constant="18" id="ZJ1-bT-ZLb"/>
+                                        </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Icon_PomoStatus" translatesAutoresizingMaskIntoConstraints="NO" id="uCu-Gk-wh6">
-                                        <rect key="frame" x="25" y="0.0" width="20" height="20"/>
+                                        <rect key="frame" x="23" y="0.0" width="18" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="07l-Dj-Efc"/>
+                                            <constraint firstAttribute="width" constant="18" id="VIc-PO-r1R"/>
+                                        </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Icon_PomoStatus" translatesAutoresizingMaskIntoConstraints="NO" id="fJx-8T-DsQ">
-                                        <rect key="frame" x="50" y="0.0" width="20" height="20"/>
+                                        <rect key="frame" x="46" y="0.0" width="18" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="gSL-yc-DfR"/>
+                                            <constraint firstAttribute="width" constant="18" id="hcF-8D-Q3Y"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total 0/3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNH-1w-rcw">
-                                <rect key="frame" x="161" y="500" width="54" height="16"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="QSe-vU-ZHg" firstAttribute="centerX" secondItem="MvJ-6h-Sx6" secondAttribute="centerX" id="15c-hh-oxx"/>
                             <constraint firstItem="ujQ-vI-5Rv" firstAttribute="top" secondItem="7VV-SB-Gb9" secondAttribute="bottom" constant="15" id="97O-Pp-RrR"/>
                             <constraint firstItem="5vA-rc-gZS" firstAttribute="leading" secondItem="MvJ-6h-Sx6" secondAttribute="leading" constant="173" id="EO2-8d-P3V"/>
                             <constraint firstItem="7VV-SB-Gb9" firstAttribute="centerX" secondItem="MvJ-6h-Sx6" secondAttribute="centerX" id="Pjq-pu-A94"/>
@@ -211,6 +223,9 @@
                         <outlet property="circlesClosedPassive" destination="ujQ-vI-5Rv" id="F8i-AV-IX5"/>
                         <outlet property="currentTaskLabel" destination="ECc-dH-oLZ" id="hI3-Gp-49q"/>
                         <outlet property="nextTaskLabel" destination="V40-YL-AAU" id="pOC-Ia-m9n"/>
+                        <outlet property="pomoCircle1" destination="pQe-1u-He8" id="c20-vO-1Xp"/>
+                        <outlet property="pomoCircle2" destination="uCu-Gk-wh6" id="9Ll-7w-q0e"/>
+                        <outlet property="pomoCircle3" destination="fJx-8T-DsQ" id="eXn-DI-aXo"/>
                         <outlet property="pomoStatus" destination="GNH-1w-rcw" id="WLM-k1-pVa"/>
                         <outlet property="previousTaskLabel" destination="Q6h-dP-Sh1" id="yu4-Sx-az8"/>
                         <outlet property="resetButton" destination="h7j-1K-iC7" id="y5e-lc-e7P"/>
@@ -235,7 +250,7 @@
                         </userDefinedRuntimeAttributes>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="duR-yL-WtK">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="duR-yL-WtK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -256,7 +271,7 @@
                         <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kd5-un-vMn">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="kd5-un-vMn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -281,37 +296,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mcF-9f-ZOP">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mcF-9f-ZOP">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <inset key="separatorInset" minX="45" minY="0.0" maxX="20" maxY="0.0"/>
+                                <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="separatorColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="separatorInset" minX="57" minY="0.0" maxX="20" maxY="0.0"/>
+                                <color key="sectionIndexBackgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="listItem" id="FdZ-rj-wPl" customClass="ItemTableViewCell" customModule="Timer" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FdZ-rj-wPl" id="Fgv-Rt-DGG">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Swift" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nK4-4Z-S0l">
-                                                    <rect key="frame" x="46" y="11" width="306" height="21"/>
+                                                    <rect key="frame" x="59" y="19" width="293" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHZ-fe-ltz">
+                                                    <rect key="frame" x="325" y="19" width="27" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" image="Icon_TaskListStart"/>
+                                                    <connections>
+                                                        <action selector="startFromTasklist:" destination="pSP-fG-e2P" eventType="touchUpInside" id="a9D-Hf-3in"/>
+                                                    </connections>
+                                                </button>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="14" background="Icon_PomoAmount" translatesAutoresizingMaskIntoConstraints="NO" id="xJc-Uc-Irg">
+                                                    <rect key="frame" x="15" y="15" width="30" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                                </textField>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="itemLabel" destination="nK4-4Z-S0l" id="2z0-sg-NfQ"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="OhJ-D5-TWd">
-                                        <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="88" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OhJ-D5-TWd" id="DiB-ev-O1B">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -349,7 +383,7 @@
                         <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="x0o-gl-dAV">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="x0o-gl-dAV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -370,7 +404,7 @@
                         <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Rp-y9-S80">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="9Rp-y9-S80">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -391,7 +425,7 @@
                         <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CtE-zi-fYI">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="CtE-zi-fYI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -407,7 +441,9 @@
     </scenes>
     <resources>
         <image name="CirclesClosed" width="165" height="165"/>
-        <image name="Icon_PomoStatus" width="20" height="20"/>
+        <image name="Icon_PomoAmount" width="32" height="32"/>
+        <image name="Icon_PomoStatus" width="21" height="20"/>
+        <image name="Icon_TaskListStart" width="21" height="21"/>
         <image name="notes" width="25" height="25"/>
         <image name="reset" width="34" height="35"/>
         <image name="settings" width="24" height="24"/>

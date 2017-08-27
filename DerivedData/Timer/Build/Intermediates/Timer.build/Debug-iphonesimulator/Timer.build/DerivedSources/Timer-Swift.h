@@ -177,6 +177,8 @@ SWIFT_CLASS("_TtC5Timer22TaskListViewController")
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (void)alert;
+- (void)tableView:(UITableView * _Nonnull)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (IBAction)startFromTasklist:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -196,6 +198,9 @@ SWIFT_CLASS("_TtC5Timer19TimerViewController")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified currentTaskLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified previousTaskLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nextTaskLabel;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified pomoCircle1;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified pomoCircle2;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified pomoCircle3;
 @property (nonatomic, readonly, strong) LOTAnimationView * _Nonnull animationView;
 @property (nonatomic) NSInteger seconds;
 @property (nonatomic, strong) NSTimer * _Nonnull timer;
